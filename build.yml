@@ -1,0 +1,11 @@
+# emacs-build/build.yml
+#
+# emacs-plus + ns-inline-patch (takaxp) build config
+#
+# このファイルは install.sh で環境変数 HOMEBREW_EMACS_PLUS_BUILD_CONFIG=<repo>/build.yml と設定されることで参照されます(デフォルト値の ~/.config/emacs-plus/build.yml は使いません)。
+#
+
+patches:
+  - ns-inline:
+      url: https://raw.githubusercontent.com/takaxp/ns-inline-patch/master/emacs-29.1-inline.patch
+      sha256: 57dfd88aecf8366b561421db5b7828c9475b9cfb61743883a6296223cff82e2a
